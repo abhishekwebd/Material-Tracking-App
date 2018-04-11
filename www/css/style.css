@@ -31,19 +31,7 @@ td{
     border-color: #607d8b!important;
     border-style: solid;
 }
-body {
-    background: url(../images/8b.jpg) no-repeat;
-    background-size: cover;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    -ms-background-size: cover;
-    background-attachment: fixed;
-    background-position: center;
-    text-align: center;
-	font-family: 'Roboto', sans-serif;
-	height: 100vh;
-}
+
 
 /*--header--*/
 .header-w3l {
