@@ -6,7 +6,7 @@
     <feature name="Device">
         <param name="browser-package" value="Device" />
     </feature>
-    <name>DLW MATERIAL RELATED INFO</name>
+    <name>DLW Material Status for Vendors</name>
     <description>
        DLW MATERIAL RELATED INFORMATION
     </description>
