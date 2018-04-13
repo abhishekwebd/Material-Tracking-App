@@ -27,11 +27,14 @@
 	<!-- Font-Awesome-Icons-CSS -->
 	<!-- //css files -->
 	<script src="js/jquery.js"></script>
-	
+	  <script src="js/angular.min.js"></script>
+  <script src="js/angular-touch.min.js"></script>
+  <script src="js/angular-animate.min.js"></script>
 	<!-- online-fonts -->
 	<link href="//fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i" rel="stylesheet">
 	<!-- //online-fonts -->
 
+	<script src="js/script.js"></script>
 	<script type="text/javascript">
 		$(document). ready(function(){
 			sessionStorage.setItem("checkboxstat","unchecked");
@@ -89,20 +92,21 @@
 </style>
 <body>
 	<!--header-->
+	<div ng-app="myApp" ng-controller="tabsSwipeCtrl as responsive" >
 	<div class="background-image"></div>
 	<div class="content">
   		
 
 
 
-			<div class="header-w3l">
+			<div class="header-w3l" ng-swipe-right="responsive.selectPage(1)" ng-swipe-left="responsive.selectPage(2)" >
 		<img src="img/logo.png" width="60px">
 
 		<h1>
 
 			<span>L</span>ogin
 			<span>H</span>ere</h1><br>
-			<h3 style="color:white;">DLW MATERIAL RELATED INFORMATION</h3>
+			<h3 style="color:white;" id="heading">DLW MATERIAL RELATED INFORMATION</h3>
 		</div>
 		<!--//header-->
 		<div class="main-content-agile">
@@ -156,7 +160,7 @@
 
 
     </div>
-	
+	</div>
 		</body>
 
 		</html>
